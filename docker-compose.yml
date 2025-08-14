@@ -2,8 +2,8 @@ version: '3.7'
 
 services:
   mysql:
-    container_name: mysql
     image: mysql:8
+    container_name: mysql
     ports:
       - 3306:3306
     environment:
@@ -11,6 +11,9 @@ services:
       - MYSQL_DATABASE=${MYSQL_DATABASE}
       - MYSQL_USER=${MYSQL_USER}
       - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+    networks:
+      - api-network
+
   api-template-nestjs:
     build:
       context: .
@@ -19,3 +22,11 @@ services:
       - 3000:3000
     depends_on:
       - mysql
+    networks:
+      - api-network
+
+networks:
+  api-network:
+    name: api-network
+    external: true
+    driver: bridge
