@@ -24,9 +24,10 @@ $ docker run --name template-nestjs -p 3000:3000 -d api-template-nestjs:v1
 ```
 
 ## Definição do docker-compose
-Coomit: [docker-compose.yml](https://github.com/GusMartins499/rocketseat-multiple-containers/commit/59de2dfa7946f5f4835587bcf88fcfef5079e88b)
+Commit: [docker-compose.yml](https://github.com/GusMartins499/rocketseat-multiple-containers/commit/59de2dfa7946f5f4835587bcf88fcfef5079e88b)
 
 ## Criação de Rede Customizada
+Commit: [docker-compose.yml](https://github.com/GusMartins499/rocketseat-multiple-containers/commit/bae8e622d7940ba51274b57f87f3a6e4e3501dcc)
 
 ```bash
 $ docker network create api-network
