@@ -4,7 +4,7 @@
 - [X] Configuração de Volumes: Garanta a persistência dos dados do banco de dados configurando volumes apropriados.
 - [X] Criação de Rede Customizada: Crie uma rede customizada para permitir a comunicação isolada entre os containers.
 - [X] Utilização de Variáveis de Ambiente: Utilize variáveis de ambiente para configurar diferentes aspectos da aplicação, como URLs do banco de dados, chaves de acesso e outras configurações sensíveis.
-- [ ] Documentação: Documente o processo de configuração em um arquivo README.md, incluindo comandos para executar os containers, configurar as variáveis de ambiente e testar a conexão entre eles.
+- [X] Documentação: Documente o processo de configuração em um arquivo README.md, incluindo comandos para executar os containers, configurar as variáveis de ambiente e testar a conexão entre eles.
  
  # Setup do projeto
  Crie um arquivo .env com as seguintes variáveis
@@ -42,6 +42,7 @@ $ docker run --network api-network -p 3000:3000 -d api-template-nestjs:v2
 ```
 
 ## Configuração de Volumes
+Commit: [docker-compose.yml](https://github.com/GusMartins499/rocketseat-multiple-containers/commit/2e2c98d7b0ca3ae750c8479d0416ef9b6468a655)
 
 ```bash
 $ docker volume create db-volume
